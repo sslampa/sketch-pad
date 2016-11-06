@@ -22,15 +22,16 @@ $(document).ready(function() {
   //Creates and adds each box
   function createGrid(ro) {
     var squares = ro * ro;
-    var length = 25 * ro + ro;
+    var length = (parseInt($('#container').height()) - ro) / ro;
 
     $('#container').empty();
-    $('#container').height(length);
-    $('#container').width(length);
 
     for (var i=0; i<squares; i++) {
       $('#container').append('<div class="square"></div>');
     }
+    
+    $('.square').height(length);
+    $('.square').width(length);
   }
 
   //Adds square-hover class to currently hovered box
