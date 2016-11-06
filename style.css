@@ -1,0 +1,48 @@
+/*Create background for grid*/
+#container {
+    border: 1px solid black;
+    height: 417px;
+    width: 417px;
+    margin: 10px auto;
+}
+
+/*To create blank boxes*/
+.square {
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*Change hovered box color*/
+.square-hover {
+  background-color: red;
+}
+
+/*Centers user-input area*/
+#user-input {
+  text-align: center;
+}
+
+/*Give buttons cleaner look*/
+.buttons {
+  font-family: arial, sans-serif;
+  background-color: red;
+  border-radius: 2px;
+  border: 2px solid red;
+  width: 70px;
+  height: 30px;
+}
+
+#text-field {
+  font-size: 20px;
+  border-radius: 1px;
+  border: 1px solid blue;
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+}
